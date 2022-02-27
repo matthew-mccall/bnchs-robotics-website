@@ -8,7 +8,8 @@ export default function Navigation(props) {
     const [isNavOpen, setIsNavOpen] = useState(false)
 
     const activeStyle = {
-        color: theme.themePrimary
+        color: theme.themePrimary,
+        textShadow: `${theme.themePrimary} 1px 0 10px`
     }
 
     const navStyle = {
@@ -18,9 +19,9 @@ export default function Navigation(props) {
     if (isNavOpen) {
         return (
             <div>
-                <div className="vw-100 backdrop" style={{ position: 'fixed', color: theme.black, overflowY: 'scroll' }} >
-                    <div className="container">
-                        <VCenter fullscreen>
+                <div className="vw-100 vh-100 backdrop" style={{ position: 'fixed', color: theme.black, overflowY: 'scroll' }} >
+                    <div className="container h-100">
+                        <VCenter>
                             <nav>
                                 <div className="row py-5">
                                     <div className="col py-3">

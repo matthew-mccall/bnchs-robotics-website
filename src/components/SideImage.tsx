@@ -26,5 +26,4 @@ export default function SideImage(props: ParallaxProps) {
             </div>
         </div>
     )
-
 }

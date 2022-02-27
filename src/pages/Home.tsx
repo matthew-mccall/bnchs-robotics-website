@@ -14,25 +14,30 @@ export default function Home() {
     return (
         <>
             <Navigation />
-            <div className="container-fluid" style={{ zIndex: -1, position: "fixed", left: 0, top: 0, background: theme.white, color: theme.black }}>
-                <div className="row vh-100">
-                    <div className="col-md">
-                        <VCenter>
-                            <img src='img/svg/bulldog_orange.svg' width="100%" alt="neon bulldog logo" />
-                        </VCenter>
+            <div style={{ zIndex: -1, position: "fixed", left: 0, top: 0, background: theme.white, color: theme.black }}>
+                <div className="vh-100 d-flex flex-column container-fluid">
+                    <div className="row flex-grow-1">
+                        <div className="col-md">
+                            <VCenter>
+                                <img src='img/svg/bulldog_orange.svg' width="100%" alt="neon bulldog logo" />
+                            </VCenter>
+                        </div>
+                        <div className="col-md">
+                            <VCenter>
+                                <h1 className="bladerunner-font display-1" style={{ color: theme.themePrimary }}>The Sentinels</h1>
+                                <p className="lead">Competitive Robotics Team</p>
+                            </VCenter>
+                        </div>
                     </div>
-                    <div className="col-md">
-                        <VCenter>
-                            <h1 className="bladerunner-font display-1" style={{ color: theme.themePrimary }}>The Sentinels</h1>
-                            <p className="lead">Compeitive Robotics Team</p>
-                        </VCenter>
+                    <div className="mx-auto pb-5">
+                        <i className="bi-arrow-down" style={{ fontSize: "2rem" }}></i>
                     </div>
                 </div>
             </div>
             <main>
                 <div className="vh-100" />
                 <DefaultStyle>
-                    <section>
+                    <section id="about">
                         <LAccentBar>
                             The Sentinels are Benjamin N. Cardozo High School's Robotics Team. We compete in various annual robotics competitions against high schools across the globe, raising awareness for Science, Technology, Engineering, and Mathematics (STEM), along with teaching students aspects behind business and marketing, logistics, and media. We also participate in various community and school events. FRC Team 5599, participates in the annual FIRST® Robotics Competition (FRC). In a six week time span, we raise funds, design, and construct a fully-functional robot.
                         </LAccentBar>
