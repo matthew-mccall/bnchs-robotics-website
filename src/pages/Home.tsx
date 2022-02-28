@@ -2,7 +2,6 @@ import React from "react";
 
 import LAccentBar from "../components/LAccentBar";
 import VCenter from '../components/VCenter'
-import Parallax from "../components/Parallax";
 
 import theme from '../../data/neon.json'
 import Navigation from "../components/Navigation";
@@ -15,7 +14,7 @@ export default function Home() {
         <>
             <Navigation />
             <div style={{ zIndex: -1, position: "fixed", left: 0, top: 0, background: theme.white, color: theme.black }}>
-                <div className="vh-100 d-flex flex-column container-fluid">
+                <div className="vh-100 vw-100 d-flex flex-column container-fluid">
                     <div className="row flex-grow-1">
                         <div className="col-md">
                             <VCenter>
@@ -34,9 +33,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <main>
-                <div className="vh-100" />
-                <DefaultStyle>
+            <div className="vh-100" />
+            <DefaultStyle>
+                <main>
                     <section id="about">
                         <LAccentBar>
                             The Sentinels are Benjamin N. Cardozo High School's Robotics Team. We compete in various annual robotics competitions against high schools across the globe, raising awareness for Science, Technology, Engineering, and Mathematics (STEM), along with teaching students aspects behind business and marketing, logistics, and media. We also participate in various community and school events. FRC Team 5599, participates in the annual FIRST® Robotics Competition (FRC). In a six week time span, we raise funds, design, and construct a fully-functional robot.
@@ -52,8 +51,8 @@ export default function Home() {
                             </VCenter>
                         </SideImage>
                     </section>
-                </DefaultStyle>
-            </main>
+                </main>
+            </DefaultStyle>
             <Footer />
         </>
     )
